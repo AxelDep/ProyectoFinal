@@ -1,0 +1,63 @@
+@use 'variables';
+@use 'mixins';
+
+.logo-header {
+  height: 40px;
+  transform: scale(6);
+  transform-origin: left center;
+
+  @include mixins.respond(md) {
+    transform: scale(3.5);
+  }
+}
+
+.navbar {
+  .navbar-brand,
+  .nav-link {
+    color: variables.$text-white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    @include mixins.transition(color, 0.2s);
+
+    &:hover,
+    &.active {
+      color: variables.$highlight;
+      background-color: rgba(255, 214, 0, 0.1);
+    }
+  }
+
+  .navbar-toggler {
+    border-color: variables.$text-white;
+  }
+}
+
+#noticiasCarousel {
+  .card {
+    box-shadow: variables.$shadow;
+    border-radius: 1rem;
+    margin: 0;
+    @include mixins.transition(transform, 0.2s);
+
+    &:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: variables.$shadow-hover;
+    }
+
+    .card-img-top {
+      object-fit: cover;
+      width: 100%;
+      height: 300px;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
+  }
+
+  .btn-warning {
+    color: variables.$text-dark;
+    font-weight: 600;
+    border-radius: 100px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-shadow: 0 2px 8px rgba(255, 193, 7, 0.12);
+  }
+}
