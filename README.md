@@ -1,6 +1,6 @@
 # aBoxesF1
 
-Sitio web informativo sobre Fórmula 1, creado como parte de la Entrega 3 del curso de Desarrollo Frontend.
+Sitio web informativo sobre Fórmula 1, creado como parte de la Entrega Final del curso de Desarrollo Frontend.
 
 ## Contenido
 
@@ -18,4 +18,4 @@ Sitio web informativo sobre Fórmula 1, creado como parte de la Entrega 3 del cu
 ## Autor
 
 Axel Deponti  
-[Repositorio en GitHub](https://github.com/AxelDep/PreEntrega3)
+[Repositorio en GitHub](https://github.com/AxelDep/ProyectoFinal)
